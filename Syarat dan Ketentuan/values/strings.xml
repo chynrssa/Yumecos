@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Syarat dan ketentuan</string>
+    <string name="confirm_order_button" />
+    <string name="rental_terms_title" />
+    <string name="rental_duration_title" />
+
+</resources>
