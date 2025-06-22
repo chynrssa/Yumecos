@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink_light_background">#FFE5EE</color>
+    <color name="pink_header_background">#FFC0CB</color>
+    <color name="purple_dark_text">#880E4F</color>
+    <color name="custom_background_light_purple">#FFEBE7F7</color>
+    <color name="custom_card_pink">#FFECDAF8</color>
+    <color name="background_main_light_purple">#FFEBE7F7</color>
+    <color name="card_background_pink">#FFECDAF8</color>
+    <color name="primary_purple">#FF6200EE</color>
+    <color name="on_primary_white">#FFFFFFFF</color>
+    <color name="background_green">#4CAF50</color>
+
+    <color name="tab_selected_background">#FFC0CB</color> <color name="tab_unselected_background">#00FFFFFF</color> <color name="text_color_active">@color/black</color>
+    <color name="text_color_inactive">@color/black</color> <color name="status_dibatalkan_text">#FF0000</color> <color name="status_pengembalian_text">#FFA500</color> </resources>

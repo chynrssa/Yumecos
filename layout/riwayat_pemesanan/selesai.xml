@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/pink_light_background"  tools:context=".SelesaiActivity">
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/pink_header_background"
+            android:elevation="2dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+        <ImageView
+                android:id="@+id/header_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description_back_button"
+                android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/header_title_riwayat_pemesanan"
+                android:textColor="@color/purple_dark_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/header_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description_app_logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_logo_yumecos1" />
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingVertical="8dp"> <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_gravity="center_horizontal"> <Button
+            android:id="@+id/tab_selesai"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:paddingHorizontal="15dp"
+            android:text="@string/tab_selesai"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Button
+                android:id="@+id/tab_dibatalkan"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="15dp"
+                android:text="@string/tab_dibatalkan"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        <Button
+                android:id="@+id/tab_pengembalian"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingHorizontal="15dp"
+                android:text="@string/tab_pengembalian"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPesanan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/pink_light_background"
+            android:padding="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_pesanan"/>
+
+</LinearLayout>
