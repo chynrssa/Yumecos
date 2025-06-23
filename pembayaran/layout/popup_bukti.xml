@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root_layout_bukti_pembayaran"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F0E6EF"
+              android:orientation="vertical">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#E6B3CC"
+            android:elevation="4dp">
+
+        <ImageView
+                android:id="@+id/btn_back_bukti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Kembali" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Ringkasan Pembayaran"
+                android:textColor="#7B4E89"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_logo_yumecos"
+                android:contentDescription="Logo" />
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="Bukti Pembayaran"
+            android:textColor="#7B4E89"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/card">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No. Pesanan"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_no_pesanan_bukti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="O-250321-AGZVRDJ"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nama Pembeli"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_nama_pembeli_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Cahya Nerissa" android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tanggal Pemesanan"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_tanggal_pemesanan_bukti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="21 Maret 2025 - 18.25 WIB"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No. Handphone"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_no_hp_bukti"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="085788755379"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nomor Order"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_nomor_order_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="HSodj02" android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Metode Pembayaran"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_metode_pembayaran_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Bank BNI" android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tanggal Pembayaran"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_tanggal_pembayaran_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="23-05-2025" android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Produk Sewa"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                <TextView
+                        android:id="@+id/tv_produk_sewa_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Genshin Impact" android:textColor="#000000"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Pembayaran"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                <TextView
+                        android:id="@+id/tv_total_pembayaran_bukti" android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Rp150.000/3 Hari" android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+            android:id="@+id/btn_selesai_bukti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#EA9ABB"
+            android:text="Selesai"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            app:cornerRadius="8dp" />
+</LinearLayout>
