@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.yumecos.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/costumeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Profile"
+        android:name="com.example.tampilanshop.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.example.yumecos.OrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_shop_to_baru"
+            app:destination="@id/navigation_Baru" />
+        <action
+            android:id="@+id/action_shop_to_popular"
+            app:destination="@id/navigation_Popular" />
+        <action
+            android:id="@+id/action_shop_to_cewek"
+            app:destination="@id/navigation_Cewek" />
+        <action
+            android:id="@+id/action_shop_to_cowok"
+            app:destination="@id/navigation_Cowok" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Baru"
+        android:name="com.example.yumecos.ui.baru.BaruFragment"
+        android:label="Baru"
+        tools:layout="@layout/fragment_baru" />
+
+    <fragment
+        android:id="@+id/navigation_Popular"
+        android:name="com.example.yumecos.ui.popular.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular" />
+
+    <fragment
+        android:id="@+id/navigation_Cewek"
+        android:name="com.example.yumecos.ui.cewek.CewekFragment"
+        android:label="Cewek"
+        tools:layout="@layout/fragment_cewek" />
+
+    <fragment
+        android:id="@+id/navigation_Cowok"
+        android:name="com.example.yumecos.ui.cowok.CowokFragment"
+        android:label="Cowok"
+        tools:layout="@layout/fragment_cowok" />
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.example.yumecos.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop"/>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.yumecos.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/costumeDetailFragment"
+        android:name="com.example.yumecos.CostumeDetailFragment"
+        android:label="fragment_costume_detail"
+        tools:layout="@layout/fragment_costume_detail" >
+
+        <argument
+            android:name="costumeData"
+            app:argType="com.example.yumecos.model.Costume" />
+
+        <action
+            android:id="@+id/action_costumeDetailFragment_to_syaratKetentuanActivity"
+            app:destination="@id/syaratKetentuanActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/syaratKetentuanActivity"
+        android:name="com.example.yumecos.SyaratKetentuanActivity"
+        android:label="Syarat &amp; Ketentuan"
+        tools:layout="@layout/activity_syarat_ketentuan" />
+</navigation>

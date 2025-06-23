@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna bawaan Material (jika butuh) -->
+    <color name="purple_200">#E1BEE7</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+
+
+    <!-- Warna custom YumeCos Anda -->
+    <color name="textSecondary">#FFFFFF</color>
+    <color name="greyLight">#C0C0C0 </color>
+    <color name="pinkPrimary">#EA9ABB</color>
+    <color name="pinkSecondary">#FFB3D9</color>
+    <color name="purpleBg">#937FBB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textPrimary">#4A148C</color>
+    <color name="brownCream">#F8C3AF</color>
+    <color name="Cream">#F5ECEC</color>
+    <color name="SecCream">#DAA7A7</color>
+    <color name="pinkLatarMuda">#F8C3AF</color>
+    <color name="PinkButton">#FEC9DC</color>
+    <color name="primary_purple">#9F1EA8</color>
+    <color name="background_white">#FAF9F9</color>
+    <color name="button_disabled_gray">#DDDDDD</color>
+    <color name="button_enabled_pink">#FEA5AD</color>
+    <color name="success_green">#4CAF50</color>
+    \
+    <color name="primary_red">#CB0000</color>
+    <color name="primary_pink">#F49BA5</color>
+    <color name="light_pink_background">#F7DAE6</color>
+    <color name="accent_pink">#EAB6BB</color>
+    <color name="text_gray">#A29E9E</color>
+    <color name="pink_light_background">#FFE5EE</color>
+    <color name="pink_header_background">#FFC0CB</color>
+    <color name="purple_dark_text">#880E4F</color>
+    <color name="custom_background_light_purple">#FFEBE7F7</color>
+    <color name="custom_card_pink">#FFECDAF8</color>
+    <color name="background_main_light_purple">#FFEBE7F7</color>
+    <color name="card_background_pink">#FFECDAF8</color>
+
+    <color name="on_primary_white">#FFFFFFFF</color>
+    <color name="background_green">#4CAF50</color>
+
+    <color name="tab_selected_background">#FFC0CB</color> <color name="tab_unselected_background">#00FFFFFF</color> <color name="text_color_active">@color/black</color>
+    <color name="text_color_inactive">@color/black</color> <color name="status_dibatalkan_text">#FF0000</color> <color name="status_pengembalian_text">#FFA500</color>
+    <color name="pink_tua">#EA9ABB</color>
+    <color name="pink_muda">#F7DAE6</color>
+    <color name="pink_peach">#F297A0</color>
+    <color name="pink_aksen">#FA2FBC</color>
+    <color name="pink_sangat_muda">#FFF0F0</color>
+    <color name="nav_icon_color">#000000</color>
+    <color name="red_wine">#9E182B</color>
+
+
+    <color name="pink_gelap_header">#FFC0CB</color>
+    <color name="darker_pink_for_title_bg">#FF69B4</color>
+    <color name="pink_button">#FF69B4</color>
+    <color name="pink_rose">#EF3751</color>
+    <color name="light_gray_for_unselected_icon">#BBBBBB</color>
+    <color name="card_background">#FCFCFC</color>
+    <color name="filter_chip_background_transparent">#99FEA5AD</color> <!-- FEA5AD dengan 40% opacity (alpha 99) -->
+    <color name="filter_chip_stroke">#FEA5AD</color>
+    <color name="pink_app_background">#FFC0CB</color>
+    <color name="pink_700">#C2185B</color>
+    <color name="pink_stroke">#FFC0CB</color>
+    <color name="blue_fill">#827AC4</color>
+
+
+</resources>
+

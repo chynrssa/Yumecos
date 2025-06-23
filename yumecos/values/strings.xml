@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">yumecos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_title_riwayat_pemesanan">Riwayat Pemesanan</string>
+    <string name="content_description_back_button">Tombol Kembali</string>
+    <string name="content_description_app_logo">Logo Aplikasi</string>
+
+    <string name="tab_selesai">Selesai</string>
+    <string name="tab_dibatalkan">Dibatalkan</string>
+    <string name="tab_pengembalian">Pengembalian</string>
+
+    <string name="text_sewa_lagi">Sewa Lagi</string>
+    <string name="text_lihat_penilaian">Lihat Penilaian</string>
+    <string name="text_rincian_pembatalan">Rincian Pembatalan</string>
+    <string name="text_rincian_pengembalian">Rincian Pengembalian</string>
+    <string name="status_selesai">Selesai</string>
+    <string name="status_dibatalkan">Dibatalkan</string>
+    <string name="status_pengembalian">Pengembalian</string>
+    <string name="order_id_prefix">Pesanan #</string>
+    <string name="product_name_arlecchino">Arlecchino</string>
+    <string name="product_game_genshin_impact">Genshin Impact</string>
+    <string name="product_name_clara">Clara</string>
+    <string name="product_game_honkai_star_rail">Honkai Star Rail</string>
+    <string name="product_name_fuxuan">Fuxuan</string>
+    <string name="product_name_march7th_hunt">March 7th The Hunt</string>
+
+    <string name="date_example">28 Mei 2025</string>
+
+    <string name="price_arlecchino">RP 150.000 / 3 days</string>
+    <string name="price_clara">RP 135.000 / 3 days</string>
+    <string name="price_fuxuan">RP 160.000 / 3 days</string>
+    <string name="price_march7th">RP 140.000 / 3 days</string>
+
+    <string name="title_rincian_pembatalan">Rincian Pembatalan</string>
+    <string name="title_rincian_pengembalian">Rincian Pengembalian</string>
+    <string name="pembatalan_berhasil">Pembatalan Berhasil</string>
+    <string name="pengembalian_berhasil">Pengembalian Berhasil</string>
+    <string name="label_diminta_oleh">Diminta oleh</string>
+    <string name="label_diminta_pada">Diminta pada</string>
+    <string name="label_alasan">Alasan</string>
+    <string name="label_customer">Customer</string>
+    <string name="ukuran_m">Ukuran M</string>
+    <string name="default_date_time">2025-01-19 10:20</string>
+    <string name="alasan_pembatalan_example">ingin mengubah alamat pengiriman</string>
+    <string name="alasan_pengembalian_example">Ketika sampai terdapat barang yang rusak</string>
+    <string name="cart_empty_title">Keranjang Anda Kosong!</string>
+    <string name="cart_empty_button_text">Yuk, Belanja</string>
+
+    <string name="item_clara_name">Clara</string>
+    <string name="item_clara_desc_game">Honkai Star Rail</string>
+    <string name="item_clara_desc_set">Full Set</string>
+    <string name="item_clara_price">Rp130.000 / 3 Days</string>
+
+    <string name="item_fuxuan_name">Fuxuan</string>
+    <string name="item_fuxuan_desc_game">Honkai Star Rail</string>
+    <string name="item_fuxuan_desc_set">Full Set</string>
+    <string name="item_fuxuan_price">Rp160.000 / 3 Days</string>
+
+    <string name="item_sylus_name">Sylus</string>
+    <string name="item_sylus_desc_game">Love and Deepspace</string>
+    <string name="item_sylus_desc_set">Full Set</string>
+    <string name="item_sylus_price">Rp110.000 / 3 Days</string>
+
+    <string name="size_l">L</string>
+    <string name="size_xl">XL</string>
+    <string name="tag_game">Game</string>
+
+    <string name="quantity_plus">+</string>
+    <string name="quantity_minus">-</string>
+    <string name="default_quantity">1</string>
+    <string name="label_subtotal">Subtotal</string>
+    <string name="value_subtotal">Rp400.000</string>
+    <string name="label_shipping">Biaya Pengiriman</string>
+    <string name="value_shipping">Rp10.000</string>
+    <string name="label_total">Total</string>
+    <string name="value_total">Rp410.000</string>
+    <string name="button_checkout">Checkout</string>
+
+    <string name="header_keranjang">KERANJANG</string>
+    <string-array name="category_options">
+        <item>Donghua</item>
+        <item>Anime</item>
+        <item>Komik</item>
+        <item>Vtuber</item>
+        <item>Game</item>
+    </string-array>
+
+    <string-array name="price_range_options">
+        <item>Kurang dari Rp 200rb</item>
+        <item>Rp 200rb - Rp 500rb</item>
+        <item>Kurang dari Rp 500rb</item>
+        <item>Rp 500rb - Rp 1jt</item>
+        <item>Lebih dari Rp 1jt</item>
+    </string-array>
+    <string name="price_range_less_than_200k">&lt; Rp200rb</string>
+    <string name="price_range_200k_to_500k">Rp200rb - Rp500rb</string>
+    <string name="price_range_less_than_500k">&lt; Rp500rb</string>
+    <string name="price_range_500k_to_1jt">Rp500rb - Rp1jt</string>
+    <string name="price_range_more_than_1jt">&gt; Rp1jt</string>
+
+    <string-array name="size_options">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>One Size</item>
+    </string-array>
+</resources>
