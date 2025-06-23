@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">YumeCos</string>
+
+    <string-array name="category_options">
+        <item>Donghua</item>
+        <item>Anime</item>
+        <item>Komik</item>
+        <item>Vtuber</item>
+        <item>Game</item>
+    </string-array>
+
+    <string-array name="price_range_options">
+        <item>Kurang dari Rp 200rb</item>
+        <item>Rp 200rb - Rp 500rb</item>
+        <item>Kurang dari Rp 500rb</item>
+        <item>Rp 500rb - Rp 1jt</item>
+        <item>Lebih dari Rp 1jt</item>
+    </string-array>
+    <string name="price_range_less_than_200k">&lt; Rp200rb</string>
+    <string name="price_range_200k_to_500k">Rp200rb - Rp500rb</string>
+    <string name="price_range_less_than_500k">&lt; Rp500rb</string>
+    <string name="price_range_500k_to_1jt">Rp500rb - Rp1jt</string>
+    <string name="price_range_more_than_1jt">&gt; Rp1jt</string>
+
+    <string-array name="size_options">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>One Size</item>
+    </string-array>
+</resources>

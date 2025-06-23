@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    app:backgroundTint="@color/white"
+    android:textColor="@color/black"
+    app:strokeColor="#FFC0CB"
+    android:backgroundTint="#99FEA5AD"
+    app:cornerRadius="20dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"/>
