@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.tampilanshop.ui.home.Home2Fragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home2" />
+
+    <fragment
+        android:id="@+id/navigation_Profile"
+        android:name="com.example.tampilanshop.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_Shop"
+        android:name="com.example.tampilanshop.ui.shop.ShopFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shop_to_baru"
+            app:destination="@id/navigation_Baru" />
+        <action
+            android:id="@+id/action_shop_to_popular"
+            app:destination="@id/navigation_Popular" />
+        <action
+            android:id="@+id/action_shop_to_cewek"
+            app:destination="@id/navigation_Cewek" />
+        <action
+            android:id="@+id/action_shop_to_cowok"
+            app:destination="@id/navigation_Cowok" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Order"
+        android:name="com.example.tampilanshop.ui.order.OrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_Baru"
+        android:name="com.example.tampilanshop.ui.baru.BaruFragment"
+        android:label="Baru"
+        tools:layout="@layout/fragment_baru" />
+
+    <fragment
+        android:id="@+id/navigation_Popular"
+        android:name="com.example.tampilanshop.ui.popular.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular" />
+
+    <fragment
+        android:id="@+id/navigation_Cewek"
+        android:name="com.example.tampilanshop.ui.cewek.CewekFragment"
+        android:label="Cewek"
+        tools:layout="@layout/fragment_cewek" />
+
+    <fragment
+        android:id="@+id/navigation_Cowok"
+        android:name="com.example.tampilanshop.ui.cowok.CowokFragment"
+        android:label="Cowok"
+        tools:layout="@layout/fragment_cowok" />
+
+</navigation>

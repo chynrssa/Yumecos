@@ -1,0 +1,6 @@
+<!-- res/drawable/botten.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFB6B6" /> <!-- Pink muda -->
+    <corners android:radius="50dp" />
+</shape>
