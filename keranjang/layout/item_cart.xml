@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="138dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/clara"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/darker_pink_for_title_bg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/item_qty_plus"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/item_image"
+            app:layout_constraintTop_toTopOf="@+id/item_image"
+            tools:text="Clara" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/item_qty_plus"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/item_image"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            tools:text="Honkai Star Rail Full set" />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/darker_pink_for_title_bg"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/item_qty_plus"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/item_image"
+            app:layout_constraintTop_toBottomOf="@+id/item_desc"
+            tools:text="Rp130.000 / 3 days" />
+
+        <Button
+            android:id="@+id/item_size_tag"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/pink_gelap_header"
+            android:fontFamily="@font/poppins_medium"
+            android:minWidth="0dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/red_wine"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/item_price"
+            app:layout_constraintTop_toBottomOf="@+id/item_price"
+            tools:text="L" />
+
+        <Button
+            android:id="@+id/item_game_tag"
+            android:layout_width="83dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/pink_gelap_header"
+            android:fontFamily="@font/poppins_medium"
+            android:minWidth="0dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/red_wine"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/item_size_tag"
+            app:layout_constraintTop_toBottomOf="@+id/item_price"
+            tools:text="GAME" />
+
+        <Button
+            android:id="@+id/item_qty_plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/quantity_plus"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:backgroundTint="@color/red_wine"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_name"
+            app:layout_constraintBottom_toTopOf="@+id/item_qty"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/item_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/item_qty_plus"
+            app:layout_constraintStart_toStartOf="@+id/item_qty_plus"
+            app:layout_constraintTop_toBottomOf="@+id/item_qty_plus"
+            app:layout_constraintBottom_toTopOf="@+id/item_qty_minus" />
+
+        <Button
+            android:id="@+id/item_qty_minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/quantity_minus"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:backgroundTint="@color/pink_rose"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_qty"
+            app:layout_constraintBottom_toBottomOf="@+id/item_game_tag" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

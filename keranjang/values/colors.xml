@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_tua">#EA9ABB</color>
+    <color name="pink_muda">#F7DAE6</color>
+    <color name="pink_peach">#F297A0</color>
+    <color name="pink_aksen">#FA2FBC</color>
+    <color name="pink_sangat_muda">#FFF0F0</color>
+    <color name="nav_icon_color">#000000</color>
+    <color name="red_wine">#9E182B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pink_gelap_header">#FFC0CB</color>
+    <color name="darker_pink_for_title_bg">#FF69B4</color>
+    <color name="pink_button">#FF69B4</color>
+    <color name="pink_rose">#EF3751</color>
+    <color name="light_gray_for_unselected_icon">#BBBBBB</color>
+</resources>

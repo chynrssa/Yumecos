@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Keranjang</string>
+
+    <string name="cart_empty_title">Keranjang Anda Kosong!</string>
+    <string name="cart_empty_button_text">Yuk, Belanja</string>
+
+    <string name="item_clara_name">Clara</string>
+    <string name="item_clara_desc_game">Honkai Star Rail</string>
+    <string name="item_clara_desc_set">Full Set</string>
+    <string name="item_clara_price">Rp130.000 / 3 Days</string>
+
+    <string name="item_fuxuan_name">Fuxuan</string>
+    <string name="item_fuxuan_desc_game">Honkai Star Rail</string>
+    <string name="item_fuxuan_desc_set">Full Set</string>
+    <string name="item_fuxuan_price">Rp160.000 / 3 Days</string>
+
+    <string name="item_sylus_name">Sylus</string>
+    <string name="item_sylus_desc_game">Love and Deepspace</string>
+    <string name="item_sylus_desc_set">Full Set</string>
+    <string name="item_sylus_price">Rp110.000 / 3 Days</string>
+
+    <string name="size_l">L</string>
+    <string name="size_xl">XL</string>
+    <string name="tag_game">Game</string>
+
+    <string name="quantity_plus">+</string>
+    <string name="quantity_minus">-</string>
+    <string name="default_quantity">1</string>
+    <string name="label_subtotal">Subtotal</string>
+    <string name="value_subtotal">Rp400.000</string>
+    <string name="label_shipping">Biaya Pengiriman</string>
+    <string name="value_shipping">Rp10.000</string>
+    <string name="label_total">Total</string>
+    <string name="value_total">Rp410.000</string>
+    <string name="button_checkout">Checkout</string>
+
+    <string name="header_keranjang">KERANJANG</string>
+
+</resources>
