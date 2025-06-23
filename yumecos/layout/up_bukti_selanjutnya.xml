@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/upload_bukti_root_scroll_view" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF0F0">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F7B7CC"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+            <ImageView
+                    android:id="@+id/btn_back_upload" android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back"
+                    android:contentDescription="Kembali" />
+
+            <TextView
+                    android:id="@+id/tv_checkout_upload" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Checkout"
+                    android:textColor="#7B4E89"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+            <ImageView
+                    android:id="@+id/img_logo_upload" android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_logo_yumecos"
+                    android:contentDescription="Logo" />
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan Upload Bukti Pembayaran"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#4A148C"
+                    android:layout_marginBottom="24dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Nomor Order"
+                    android:textColor="#4A148C" />
+            <EditText
+                    android:id="@+id/et_nomor_order" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contoh: ORD123456"
+                    android:background="@drawable/edittext_border"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="16dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Metode Pembayaran"
+                    android:textColor="#4A148C" />
+            <EditText
+                    android:id="@+id/et_metode_pembayaran" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Transfer Bank, E-Wallet, dll"
+                    android:background="@drawable/edittext_border"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="16dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Tanggal Pembayaran"
+                    android:textColor="#4A148C" />
+            <EditText
+                    android:id="@+id/et_tanggal_pembayaran" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DD/MM/YYYY"
+                    android:background="@drawable/edittext_border"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="16dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Jumlah Nominal Pembayaran"
+                    android:textColor="#4A148C" />
+            <EditText
+                    android:id="@+id/et_jumlah_nominal" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contoh: 100000"
+                    android:background="@drawable/edittext_border"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="24dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Bukti Pembayaran"
+                    android:textColor="#4A148C"
+                    android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                    android:id="@+id/btn_upload_image_area" android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/rounded_top_white"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                <ImageView
+                        android:id="@+id/iv_bukti_pembayaran_preview" android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/ic_camera"
+                        android:contentDescription="Camera Icon" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Bukti Pembayaran"
+                        android:textColor="#7B4E89"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btn_konfirmasi_upload" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#7B4E89" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

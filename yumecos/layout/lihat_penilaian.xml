@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFECEC"
+        tools:context="LihatPenilaianActivity">
+
+    <View
+            android:id="@+id/topBorderLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFC0CB" android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="Tombol kembali"
+                android:padding="8dp" />
+
+        <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pemesanan"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+                android:id="@+id/headerRightIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_logo_yumecos1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="Logo Aplikasi"
+                android:scaleType="fitCenter"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+            android:id="@+id/bottomBorderLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/topBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+            android:id="@+id/reviewDetailsTitleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/img_rincian_penilaian_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topBar"
+            android:adjustViewBounds="true"
+            android:contentDescription="Judul Rincian Penilaian" />
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="381dp"
+            android:layout_height="339dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:contentPadding="16dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reviewDetailsTitleImage" app:cardBackgroundColor="#FFECEC">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
+                android:background="@drawable/rounded_card_background_with_stroke">
+            <ImageView
+                    android:id="@+id/reviewerAvatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/poto_profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="Avatar Peninjau"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+            <TextView
+                    android:id="@+id/reviewerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Cahyaaaaa7"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/reviewerAvatar"
+                    app:layout_constraintTop_toTopOf="@id/reviewerAvatar"/>
+
+            <LinearLayout
+                    android:id="@+id/starRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@id/reviewerAvatar"
+                    app:layout_constraintTop_toBottomOf="@id/reviewerName">
+
+                <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_star_filled"
+                        android:contentDescription="Bintang Rating 1"/>
+
+                <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_star_filled"
+                        android:contentDescription="Bintang Rating 2"/>
+
+                <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_star_filled"
+                        android:contentDescription="Bintang Rating 3"/>
+
+                <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_star_filled"
+                        android:contentDescription="Bintang Rating 4"/>
+
+                <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_star_filled"
+                        android:contentDescription="Bintang Rating 5"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/reviewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="2025-01-19 10:20"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/starRating"
+                    app:layout_constraintTop_toBottomOf="@id/reviewerName"
+                    app:layout_constraintBottom_toBottomOf="@id/starRating"/>
+
+            <TextView
+                    android:id="@+id/rentalResponseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Respon Rental"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/reviewerAvatar"
+                    app:layout_constraintTop_toBottomOf="@id/starRating"/>
+
+            <TextView
+                    android:id="@+id/rentalResponseContent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_light_gray_response"
+                    android:padding="16dp"
+                    android:text="Alhamdulillah, terima kasih banyak atas kepercayaannya. Kami sangat senang bisa melayani Anda. Semoga puas dengan layanan dan kostum yang disewa, dan kami berharap dapat menyambut Anda kembali di lain waktu. 😊"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rentalResponseTitle"
+                    android:layout_marginHorizontal="16dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/productInfoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_background_light_gray"
+                    android:paddingStart="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="4dp"
+                    app:layout_constraintStart_toStartOf="@id/reviewerAvatar"
+                    app:layout_constraintTop_toBottomOf="@id/rentalResponseContent">
+
+                <ImageView
+                        android:id="@+id/productImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arlecchino"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="Gambar Produk Arlecchino"/>
+
+                <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Arlecchino Genshin impact"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/productImage"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
