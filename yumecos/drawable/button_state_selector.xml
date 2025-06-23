@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Status saat tombol TIDAK aktif (disabled). Ini akan ditampilkan pertama kali. -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <!-- Warna abu-abu saat nonaktif -->
+            <solid android:color="#D3D3D3" />
+            <corners android:radius="15dp" />
+        </shape>
+    </item>
+
+    <!-- Status default (saat tombol aktif). Ini akan ditampilkan saat checkbox dicentang. -->
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <!-- Warna pink Anda saat aktif -->
+            <solid android:color="@color/primary_pink" />
+            <corners android:radius="15dp" />
+        </shape>
+    </item>
+
+</selector>

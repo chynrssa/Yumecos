@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#F8C3AF"/>
+    <corners android:radius="8dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/SecCream"/> <!-- Ganti dengan warna stroke yang kamu inginkan, misal pink -->
+</shape>
