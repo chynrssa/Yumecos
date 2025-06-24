@@ -1,6 +1,6 @@
 # 🍃 Yumecos - Final Project Application Development
 
-Yumecos adalah sebuah aplikasi yang dikembangkan sebagai proyek akhir oleh mahasiswa Teknik Informatika. Aplikasi ini bertujuan untuk memberikan solusi berbasis teknologi dalam bidang [deskripsi singkat tentang tujuan Yumecos, misalnya: pengelolaan lingkungan, edukasi ekosistem, atau lainnya - silakan disesuaikan].
+Yumecos adalah sebuah aplikasi yang dikembangkan sebagai proyek akhir oleh mahasiswa Ilmu Komputer. Aplikasi ini bertujuan untuk memberikan solusi berbasis teknologi dalam bidang [Yumecos, Bertujuan untuk membuat aplikasi penyewaan kostum yang fleksibel dan ringan dipakai].
 
 ---
 
@@ -25,11 +25,20 @@ Yumecos adalah sebuah aplikasi yang dikembangkan sebagai proyek akhir oleh mahas
 - 📄 **Dokumentasi & Laporan Lengkap** : [Akses Google Drive](https://drive.google.com/drive/folders/1Ps_48D8qD74eMLsGK4Rcm71H0Y0-gR4s?usp=sharing)  
 
 ---
+## Pembagian Tugas
+| Nama                    | Tugas           
+|-------------------------|--------------------------------------|
+| Ghaisan Wildan Bathsya  | Katalog, Dasboard & splash screen    |
+| Muhammad Ilham Akbar    | Profile &   Validasi keranjang       |
+| Clara Monica            | Keranjang & Isi keranjang            |
+| Cahya Nerissa           | Pembayaran & Riwayat Pemesanan       |
+| Dilvi Yola Ferlyanda    | Shop                                 |
+| Luthfia Rahma Sholihah  | Search & Filter                      |
 
 ## 📢 Catatan
 
-Pengembangan Yumecos dilakukan dalam rangka memenuhi tugas akhir mata kuliah **[sebutkan nama mata kuliah atau proyek akhir, jika ada]**.  
-Silakan gunakan, modifikasi, atau mempelajari repositori ini dengan bijak.
+Pengembangan Yumecos dilakukan dalam rangka memenuhi tugas akhir mata kuliah **[Teknologi dan Aplikasi Mobile]**.  
+Silakan gunakan, modifikasi, atau mempelajari repositori ini dengan bijak. Penggabungan File dilakukan  Ghaisan.
 
 ---
 
